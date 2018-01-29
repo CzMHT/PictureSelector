@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        title = "PictureSelector"
+        view.backgroundColor = UIColor.white
+        addChildViewController(PictureSelectorVC)
+        view.addSubview(PictureSelectorVC.view)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +23,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // MARK: 添加图片选择器
+    private lazy var PictureSelectorVC: PictureSelectorController = {
+        
+        let vc = PictureSelectorController()
+        
+        vc.view.frame = view.bounds
+        
+        return vc
+    }()
 }
 

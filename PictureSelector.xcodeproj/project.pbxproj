@@ -13,6 +13,11 @@
 		9E8C7A84201ECEFF001C4911 /* PictureSelector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C7A82201ECEFF001C4911 /* PictureSelector.xcdatamodeld */; };
 		9E8C7A86201ECEFF001C4911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8C7A85201ECEFF001C4911 /* Assets.xcassets */; };
 		9E8C7A89201ECEFF001C4911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8C7A87201ECEFF001C4911 /* LaunchScreen.storyboard */; };
+		9E8C7A92201ECF6C001C4911 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C7A91201ECF6C001C4911 /* UIImage+Extension.swift */; };
+		9E8C7A94201ED0CB001C4911 /* PictureSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C7A93201ED0CB001C4911 /* PictureSelectorCell.swift */; };
+		9E8C7A96201EEB48001C4911 /* PictureSelectorFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C7A95201EEB48001C4911 /* PictureSelectorFlowLayout.swift */; };
+		9E8C7A98201EEBD3001C4911 /* PictureSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C7A97201EEBD3001C4911 /* PictureSelectorController.swift */; };
+		9E8C7A9A201EF219001C4911 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C7A99201EF218001C4911 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		9E8C7A85201ECEFF001C4911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E8C7A88201ECEFF001C4911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E8C7A8A201ECEFF001C4911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8C7A91201ECF6C001C4911 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		9E8C7A93201ED0CB001C4911 /* PictureSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSelectorCell.swift; sourceTree = "<group>"; };
+		9E8C7A95201EEB48001C4911 /* PictureSelectorFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSelectorFlowLayout.swift; sourceTree = "<group>"; };
+		9E8C7A97201EEBD3001C4911 /* PictureSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSelectorController.swift; sourceTree = "<group>"; };
+		9E8C7A99201EF218001C4911 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,7 @@
 		9E8C7A6F201ECEFF001C4911 = {
 			isa = PBXGroup;
 			children = (
+				9E8C7A90201ECF23001C4911 /* Selector */,
 				9E8C7A7A201ECEFF001C4911 /* PictureSelector */,
 				9E8C7A79201ECEFF001C4911 /* Products */,
 			);
@@ -65,6 +76,18 @@
 				9E8C7A82201ECEFF001C4911 /* PictureSelector.xcdatamodeld */,
 			);
 			path = PictureSelector;
+			sourceTree = "<group>";
+		};
+		9E8C7A90201ECF23001C4911 /* Selector */ = {
+			isa = PBXGroup;
+			children = (
+				9E8C7A99201EF218001C4911 /* Common.swift */,
+				9E8C7A91201ECF6C001C4911 /* UIImage+Extension.swift */,
+				9E8C7A93201ED0CB001C4911 /* PictureSelectorCell.swift */,
+				9E8C7A95201EEB48001C4911 /* PictureSelectorFlowLayout.swift */,
+				9E8C7A97201EEBD3001C4911 /* PictureSelectorController.swift */,
+			);
+			path = Selector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E8C7A9A201EF219001C4911 /* Common.swift in Sources */,
 				9E8C7A7E201ECEFF001C4911 /* ViewController.swift in Sources */,
+				9E8C7A98201EEBD3001C4911 /* PictureSelectorController.swift in Sources */,
+				9E8C7A96201EEB48001C4911 /* PictureSelectorFlowLayout.swift in Sources */,
 				9E8C7A7C201ECEFF001C4911 /* AppDelegate.swift in Sources */,
 				9E8C7A84201ECEFF001C4911 /* PictureSelector.xcdatamodeld in Sources */,
+				9E8C7A92201ECF6C001C4911 /* UIImage+Extension.swift in Sources */,
+				9E8C7A94201ED0CB001C4911 /* PictureSelectorCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
